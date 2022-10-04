@@ -19,7 +19,17 @@ class ViewController: UIViewController {
     }
 
     @IBAction func profileButtonDidtap(_ sender: Any) {
-        todayLabel.text = "button touch"
+//        guard let presentedViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PresentedViewController") as? PresentedViewController else {return}
+//
+//        present(presentedViewController, animated: true)
+        
+        
+        guard let pushedViewController = UIStoryboard(name: "Main", bundle: nil)
+            .instantiateViewController(withIdentifier: "PushedViewController") as? PushedViewController else {return}
+        
+        navigationController?
+            .pushViewController(pushedViewController, animated: true)
+        
     }
     
 }
