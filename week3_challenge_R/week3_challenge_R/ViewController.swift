@@ -17,15 +17,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        expertView.layer.shadowOffset = CGSize(width: 20, height: 15)
-        expertView.layer.shadowOpacity = 0.2
+        //expertView.layer.shadowOffset = CGSize(width: 20, height: 15)
+        expertView.layer.shadowOpacity = 0.1
         expertView.layer.shadowRadius = 10
         expertView.layer.cornerRadius = 10
         expertView.layer.borderColor = UIColor.gray.cgColor
         expertView.layer.borderWidth = 0.2
         
-        reporterView.layer.shadowOffset = CGSize(width: 20, height: 15)
-        reporterView.layer.shadowOpacity = 0.2
+        //reporterView.layer.shadowOffset = CGSize(width: 20, height: 15)
+        reporterView.layer.shadowOpacity = 0.1
         reporterView.layer.shadowRadius = 10
         reporterView.layer.cornerRadius = 10
         expertView.layer.borderColor = UIColor.gray.cgColor
@@ -33,15 +33,13 @@ class ViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
+    
     @IBAction func reporterBtn(_ sender: Any) {
-        guard let pushedViewController =
-            UIStoryboard(name: "Main", bundle: nil)
-                .instantiateViewController(withIdentifier:"PushedViewController") as?
-            PushedViewController else {return}
-
-        navigationController?
-            .pushViewController(pushedViewController, animated: true)
-
+        guard let reporterViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PushedViewController") as? PushedViewController else {return}
+        
+        //present(reporterViewController, animated: true)
+        //reporterViewController.modalPresentationStyle = .fullScreen
+        navigationController?.pushViewController(reporterViewController, animated: true)
     }
     
 }

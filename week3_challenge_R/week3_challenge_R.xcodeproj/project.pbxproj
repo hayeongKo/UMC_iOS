@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF07C6DA28EEC58600AD288C /* ApplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF07C6D928EEC58600AD288C /* ApplyViewController.swift */; };
+		BFCC617528EEDB490032A396 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCC617428EEDB490032A396 /* CheckViewController.swift */; };
 		BFF23F5E28EDF6EA00BC38D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF23F5D28EDF6EA00BC38D0 /* AppDelegate.swift */; };
 		BFF23F6028EDF6EA00BC38D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF23F5F28EDF6EA00BC38D0 /* SceneDelegate.swift */; };
 		BFF23F6228EDF6EA00BC38D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF23F6128EDF6EA00BC38D0 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF07C6D928EEC58600AD288C /* ApplyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyViewController.swift; sourceTree = "<group>"; };
+		BFCC617428EEDB490032A396 /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
 		BFF23F5A28EDF6EA00BC38D0 /* week3_challenge_R.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = week3_challenge_R.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF23F5D28EDF6EA00BC38D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFF23F5F28EDF6EA00BC38D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 				BFF23F5F28EDF6EA00BC38D0 /* SceneDelegate.swift */,
 				BFF23F6128EDF6EA00BC38D0 /* ViewController.swift */,
 				BFF23F6328EDF6EA00BC38D0 /* Main.storyboard */,
+				BFCC617428EEDB490032A396 /* CheckViewController.swift */,
+				BF07C6D928EEC58600AD288C /* ApplyViewController.swift */,
 				BFF23F7128EDFC0B00BC38D0 /* PushedViewController.swift */,
 				BFF23F6628EDF6EC00BC38D0 /* Assets.xcassets */,
 				BFF23F6828EDF6EC00BC38D0 /* LaunchScreen.storyboard */,
@@ -143,6 +149,8 @@
 			files = (
 				BFF23F6228EDF6EA00BC38D0 /* ViewController.swift in Sources */,
 				BFF23F7228EDFC0B00BC38D0 /* PushedViewController.swift in Sources */,
+				BF07C6DA28EEC58600AD288C /* ApplyViewController.swift in Sources */,
+				BFCC617528EEDB490032A396 /* CheckViewController.swift in Sources */,
 				BFF23F5E28EDF6EA00BC38D0 /* AppDelegate.swift in Sources */,
 				BFF23F6028EDF6EA00BC38D0 /* SceneDelegate.swift in Sources */,
 			);
