@@ -7,7 +7,16 @@
 
 import UIKit
 
-class PushedViewController: UIViewController {
+class PushedViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return fieldRoomData.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExpertPartCollectionViewCell", for: indexPath) as? ExpertPartCollectionViewCell else {return UICollectionViewCell() }
+        cell.fieldButton = fieldRoomData[indexPath.row].fieldimage
+    }
+    
     
     open var shadowOffset : CGSize?
     open var shadowOpacity: Float?
@@ -21,8 +30,16 @@ class PushedViewController: UIViewController {
     @IBOutlet weak var etcView: UIView!
     @IBOutlet weak var scienceView: UIView!
     
+    
+    @IBOutlet weak var fieldCollectionView: UICollectionView!
+    
+    func setupCollectionView() {
+        fieldCollectionView.delegate = self
+        fieldCollectionView.dataSource = self
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupCollectionView()
         
         setViewValue(view: politicSocietyView)
         setViewShadow(view: politicSocietyView)
@@ -60,5 +77,41 @@ class PushedViewController: UIViewController {
         
         navigationController?.pushViewController(applyViewController, animated: true)
     }
+    let fieldRoomData: [fieldRoomDataModel] = [
+        fieldRoomDataModel(
+            fieldimage: UIImage(systemName:"shield"),
+            fieldName: "정치 / 사회"),
+        fieldRoomDataModel(
+            fieldimage: UIImage(systemName: "dollarsign.circle"),
+            fieldName: "경제 / 금융"),
+        fieldRoomDataModel(
+            fieldimage: UIImage(systemName: "graduationcap"),
+            fieldName: "교육"
+        ),
+        fieldRoomDataModel(
+            fieldimage: UIImage(systemName: "paintpalette"),
+            fieldName: "문화 / 예술"
+        ),
+        fieldRoomDataModel(
+            fieldimage: "desktopcomputer",
+            fieldName: "IT / 과학"
+        ),
+        fieldRoomDataModel(
+            fieldimage: UIImage(systemName: "hammer"),
+            fieldName: "법률"
+        ),
+        fieldRoomDataModel(
+            fieldimage: UIImage(systemName: "cross.circle"),
+            fieldName: "의료 / 복지"
+        ),
+        fieldRoomDataModel(
+            fieldimage: UIImage(systemName: "plus.square"),
+            fieldName: "기타"
+        )]
     
+}
+
+struct fieldRoomDataModel {
+    let fieldimage: UIImage?
+    let fieldName: String
 }

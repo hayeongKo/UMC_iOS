@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "CD937741-ABA7-4AD5-AD58-24B7683789C8"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4BAD1C91-9C2B-48DE-B711-2B4E72FC2165"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "4week_practice/KakaoTalkViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "KakaoTalkViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "4BAD1C91-9C2B-48DE-B711-2B4E72FC2165 - 607f0ae681c2bb31"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_week_practice.KakaoTalkViewController.refreshControl.getter : __C.UIRefreshControl"
+                  moduleName = "4week_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gohayeong/Desktop/UMC_iOS/week5/4week_practice/KakaoTalkViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "49">
+               </Location>
+               <Location
+                  uuid = "4BAD1C91-9C2B-48DE-B711-2B4E72FC2165 - 3773dd9d039d5099"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_week_practice.KakaoTalkViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; _week_practice.KakaoTalkViewController"
+                  moduleName = "4week_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gohayeong/Desktop/UMC_iOS/week5/4week_practice/KakaoTalkViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "281">
+               </Location>
+               <Location
+                  uuid = "4BAD1C91-9C2B-48DE-B711-2B4E72FC2165 - b907a2b11d3dadfa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_week_practice.KakaoTalkViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;_week_practice.KakaoTalkViewController&gt;"
+                  moduleName = "4week_practice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gohayeong/Desktop/UMC_iOS/week5/4week_practice/KakaoTalkViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "220">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
