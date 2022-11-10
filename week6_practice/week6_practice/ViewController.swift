@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
 
     @IBOutlet weak var view1: UIView!
     @IBOutlet weak var view2: UIView!
@@ -30,7 +31,7 @@ class ViewController: UIViewController {
     ]
 
     func threadTest() {
-        DispatchQueue.global().sync {
+        DispatchQueue.global().async {
             for color in self.colorList {
                 DispatchQueue.main.sync {
                     self.view1.backgroundColor = color;
@@ -39,7 +40,7 @@ class ViewController: UIViewController {
             }
         }
         
-        DispatchQueue.global().sync {
+        DispatchQueue.global().async {
             for color in self.colorList {
                 DispatchQueue.main.sync {
                     self.view2.backgroundColor = color;

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="week6_practice_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeJ-Vi-ICn">
+                                <rect key="frame" x="30" y="187" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="currentTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68o-KA-zNA">
+                                <rect key="frame" x="37" y="262" width="93" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="pickerTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DmJ-Ev-Ou7">
+                                <rect key="frame" x="60" y="493" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="VrN-Pp-r1K">
+                                <rect key="frame" x="0.0" y="328" width="300" height="34.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="MCf-Zp-dC8"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changeDatePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="uab-k4-zvn"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="68o-KA-zNA" firstAttribute="leading" secondItem="BeJ-Vi-ICn" secondAttribute="leading" id="7Da-kw-hrZ"/>
+                            <constraint firstItem="VrN-Pp-r1K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="87x-vE-axF"/>
+                            <constraint firstItem="DmJ-Ev-Ou7" firstAttribute="leading" secondItem="68o-KA-zNA" secondAttribute="leading" id="FK7-8m-f3E"/>
+                            <constraint firstItem="68o-KA-zNA" firstAttribute="top" secondItem="BeJ-Vi-ICn" secondAttribute="bottom" constant="54" id="GYb-nw-6SZ"/>
+                            <constraint firstItem="VrN-Pp-r1K" firstAttribute="top" secondItem="68o-KA-zNA" secondAttribute="bottom" constant="45" id="Haq-Vg-IMC"/>
+                            <constraint firstItem="BeJ-Vi-ICn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="128" id="I2y-b4-WCU"/>
+                            <constraint firstItem="BeJ-Vi-ICn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="aFV-s4-xiN"/>
+                            <constraint firstItem="DmJ-Ev-Ou7" firstAttribute="top" secondItem="68o-KA-zNA" secondAttribute="bottom" constant="210" id="h1h-U4-7jG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countTime" destination="BeJ-Vi-ICn" id="zpI-NK-0Dv"/>
+                        <outlet property="lbCurrentTime" destination="68o-KA-zNA" id="6II-JT-KAj"/>
+                        <outlet property="lbPickerTime" destination="DmJ-Ev-Ou7" id="96m-D4-VLG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78.625954198473281" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
